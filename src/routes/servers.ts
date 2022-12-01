@@ -1,7 +1,9 @@
 import { Router } from 'express';
-// import { getAll, create, remove } from '../controllers/servers.js';
+import { testFFMPEG } from '../controllers/ffmpeg.js';
 
 const router = Router();
+
+router.get('/test', testFFMPEG)
 
 // router.get('/api/server', getAll);
 

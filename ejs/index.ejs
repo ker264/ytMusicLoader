@@ -10,8 +10,16 @@
         <div class="container">
             <h1>Какого хрена не работает TS?</h1>
             <div><a href="/features">Го ту собака</a></div>
-            <div><a href="/download" target="_blank">Скачать собаку</a></div>
-        </div>        
+            <div><a onclick="test()">Скачать собаку</a></div>
+        </div>
+
+        <script>
+            async function test() {
+                let response = await fetch("/test")
+                let out = await response.json();
+                console.log(out);
+            }
+        </script>
 </body>
 
 </html>

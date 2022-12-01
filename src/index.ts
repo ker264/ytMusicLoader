@@ -20,7 +20,7 @@ app.use(logger);
 
 app.use(serverRoutes);
 
-app.get('/', (req, res) => {    
+app.get('/', (req, res) => {        
     res.render('index', { title: "Main Page", active: "main" });        
 })
 
@@ -28,9 +28,9 @@ app.get('/features', (req, res) => {
     res.render('features', { title: "Features Page", active: "features" })
 })
 
-app.get('/download', (req, res) => {
-    res.download(path.resolve(__dirname, 'ejs', 'index.ejs'));
-});
+// app.get('/test', (req, res) => {
+//     res.download(path.resolve(__dirname, 'ejs', 'index.ejs'));
+// });
 
 //Запуск сервера
 app.listen(PORT, () => {
