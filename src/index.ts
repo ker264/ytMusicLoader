@@ -28,6 +28,7 @@ app.get('/features', (req, res) => {
     res.render('features', { title: "Features Page", active: "features" })
 })
 
+
 // app.get('/test', (req, res) => {
 //     res.download(path.resolve(__dirname, 'ejs', 'index.ejs'));
 // });
